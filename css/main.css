@@ -1,0 +1,123 @@
+:root{ /*Criar variaveis no CSS quando o elemento for utilizado várias vezes em lugares diferentes do codigo*/
+    --vermelho: #e50914;
+    --preta: #000000;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+body{
+    margin-left: 5px;
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+
+header img{
+    width: 130px;
+    height: 55px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black','Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header nav {
+    padding: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{/*Quando passar o mouse em cima do link a cor irá mudar*/
+    color: #ffff;
+}
+
+/*filme-principal*/
+main h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.filme-principal{
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/big_bang_a_teoria.jpg); /*rgba cria um gradiente sobre a imagem*/
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+
+.filme-principal .titulo{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: -15px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+
+    padding: 15px 30px;/*Coloca espaçamento nos quatros eixos - cima, baixo, lado esquerdo e lado direito.*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
